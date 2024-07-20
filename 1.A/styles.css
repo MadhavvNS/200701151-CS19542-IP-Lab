@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.resume {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 950px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    overflow: hidden; 
+}
+
+
+.left-column {
+    width: 50%;
+    padding: 20px;
+    border-right: 2px solid #000000; 
+    box-sizing: border-box;
+}
+
+.right-column {
+    width: 50%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.name-title {
+    text-align: left;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #000000dd;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #000000;
+    border-bottom: 1px solid #000000a6;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+section li {
+    margin-bottom: 5px;
+}
+
+section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 5px;
+}
+ 
