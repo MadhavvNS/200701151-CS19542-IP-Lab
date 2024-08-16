@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: rgb(255, 255, 255); font-style: italic;">Registration Form</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+
+            <div class="form-group">
+                <label for="student_name">Student Name:</label>
+                <input type="text" id="student_name" name="student_name" placeholder="Enter your name">
+                <span id="student_name_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="rollno">Roll No:</label>
+                <input type="text" id="rollno" name="rollno" placeholder="Enter your roll number">
+                <span id="rollno_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                    <label><input type="radio" name="gender" value="Other"> Other</label>
+                </div>
+                <span id="gender_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <span id="dob_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <select id="year" name="year">
+                    <option value="">Select Year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+                <span id="year_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" placeholder="Enter your department">
+                <span id="department_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="section">Section:</label>
+                <input type="text" id="section" name="section" placeholder="Enter your section">
+                <span id="section_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile_no">Mobile No:</label>
+                <input type="tel" id="mobile_no" name="mobile_no" placeholder="Enter your mobile number">
+                <span id="mobile_no_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-Mail ID:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <span id="email_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea>
+                <span id="address_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city">
+                <span id="city_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Enter your country">
+                <span id="country_error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="pincode">Pincode:</label>
+                <input type="number" id="pincode" name="pincode" placeholder="Enter your pincode">
+                <span id="pincode_error" class="error"></span>
+            </div>
+
+            <div class="form-footer">
+                <p>Note: All fields are required. Please ensure that all the information is correct before submitting the form.</p>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="btn-submit">Register</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
